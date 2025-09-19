@@ -237,6 +237,9 @@ static void update_range_recursive(segment_tree_t *st, int node, int start, int 
     if (start >= l && end <= r) {
         if (st->lazy_enabled && st->update_lazy != NULL) {
             st->update_lazy(st, node, start, end, val);
+            if (st->propagate != NULL) {
+                st->propagate(st, node, start, end);
+            }
         } else {
             st->tree[node] = val;
         }

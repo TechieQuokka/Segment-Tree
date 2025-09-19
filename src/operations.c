@@ -18,7 +18,6 @@ void update_lazy_sum(segment_tree_t *st, int node, int start, int end, int val) 
     }
 
     st->lazy[node] += val;
-    st->tree[node] += val * (end - start + 1);
 }
 
 void update_lazy_min(segment_tree_t *st, int node, int start, int end, int val) {
