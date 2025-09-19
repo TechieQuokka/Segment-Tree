@@ -1,0 +1,51 @@
+# Build artifacts
+obj/
+lib/
+bin/
+*.o
+*.a
+*.exe
+
+# IDE and editor files
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Valgrind output
+vgcore.*
+*.valgrind
+
+# Coverage files
+*.gcov
+*.gcda
+*.gcno
+
+# Profiling files
+gmon.out
+
+# Local configuration
+config.local
+.env.local
